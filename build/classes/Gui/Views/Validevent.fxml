@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Controllers.ValideventController">
+   <children>
+      <TextField fx:id="textFiled" layoutX="98.0" layoutY="115.0" promptText="votre demande acceptée" style="-fx-background-color: transparent; -fx-border-color: #bef574;" text="votre demande acceptée">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Label fx:id="message" layoutX="21.0" layoutY="202.0" prefHeight="17.0" prefWidth="449.0" text=" vous recevrez un message avec devis et nous avons contacté .">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

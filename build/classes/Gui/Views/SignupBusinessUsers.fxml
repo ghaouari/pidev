@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Controllers.SignupBusinessUsersController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="500.0" prefWidth="178.0" style="-fx-background-color: #0598ff;" />
+      <Label fx:id="SignupBusinessUsers" layoutX="208.0" layoutY="28.0" prefHeight="24.0" prefWidth="212.0" text="Signup Business Users">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LastName" layoutX="225.0" layoutY="99.0" prefHeight="25.0" prefWidth="178.0" promptText="Last Name" />
+      <TextField fx:id="FirstName" layoutX="471.0" layoutY="99.0" prefHeight="25.0" prefWidth="178.0" promptText="First Name" />
+      <TextField fx:id="Email" layoutX="225.0" layoutY="225.0" prefHeight="25.0" prefWidth="178.0" promptText="Email" />
+      <TextField fx:id="Phone" layoutX="471.0" layoutY="225.0" prefHeight="25.0" prefWidth="178.0" promptText="Phone" />
+      <TextField fx:id="Login" layoutX="225.0" layoutY="167.0" prefHeight="25.0" prefWidth="178.0" promptText="Login" />
+      <TextField fx:id="Adress" layoutX="223.0" layoutY="281.0" prefHeight="25.0" prefWidth="178.0" promptText="Adress" />
+      <Button fx:id="Register" layoutX="379.0" layoutY="381.0" mnemonicParsing="false" onAction="#goToGestionCompte" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff;" text="Register">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="Reset" layoutX="218.0" layoutY="427.0" mnemonicParsing="false" onAction="#goToSigupclient" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff;" text="Reset">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="Password" layoutX="471.0" layoutY="167.0" prefHeight="25.0" prefWidth="178.0" promptText="Password" />
+      <TextField fx:id="Role" layoutX="469.0" layoutY="280.0" prefHeight="25.0" prefWidth="178.0" promptText="Role" />
+      <TextField fx:id="cin" layoutX="225.0" layoutY="333.0" prefHeight="25.0" prefWidth="178.0" promptText="Cin" />
+   </children>
+</AnchorPane>

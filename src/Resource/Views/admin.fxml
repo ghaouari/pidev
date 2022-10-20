@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="919.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller_admin">
+   <children>
+      <TabPane prefHeight="478.0" prefWidth="942.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Prestataire">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane cacheShape="false" centerShape="false" layoutX="7.0" layoutY="6.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="11.0" prefWidth="0.0" scaleShape="false" style="-fx-background-color: green;">
+                           <children>
+                              <Label layoutX="33.0" layoutY="134.0" prefHeight="30.0" prefWidth="82.0" text="nom">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="33.0" layoutY="167.0" prefHeight="17.0" prefWidth="75.0" text="prenom">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="228.0" prefHeight="17.0" prefWidth="60.0" text="tel">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="33.0" layoutY="260.0" prefHeight="30.0" prefWidth="83.0" text="experience">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="firsname" fx:id="nom_user" layoutX="121.0" layoutY="138.0" opacity="0.72" prefHeight="17.0" prefWidth="160.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <effect>
+                                    <Blend />
+                                 </effect>
+                              </TextField>
+                              <TextField id="lastname" fx:id="prenom_user" layoutX="121.0" layoutY="167.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <TextField id="num" fx:id="tel_user" layoutX="121.0" layoutY="231.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <TextField id="role" fx:id="ville_user" layoutX="121.0" layoutY="200.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <TextField id="email" fx:id="exp_user" layoutX="121.0" layoutY="262.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <Label layoutX="33.0" layoutY="198.0" prefHeight="17.0" prefWidth="60.0" text="ville">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="292.0" prefHeight="30.0" prefWidth="89.0" text="nomService">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+
+                              <!--  <ComboBox fx:id="cbGender" layoutX="185.0" layoutY="170.0" prefHeight="25.0" prefWidth="169.0" promptText="&lt;select gender&gt;" />
+                           -->
+                           </children>
+                        </Pane>
+
+                        <Label fx:id="lblStatus" layoutX="453.0" layoutY="6.0" prefHeight="32.0" prefWidth="354.0" text="Liste de Prestataire :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Button id="delete" fx:id="delete_user" layoutX="328.0" layoutY="179.0" mnemonicParsing="false" onAction="#delete_user" prefHeight="25.0" prefWidth="103.0" text="Delete" textFill="#ee0707">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="update" fx:id="update_user" layoutX="328.0" layoutY="138.0" mnemonicParsing="false" onAction="#update_user" prefHeight="25.0" prefWidth="103.0" text="Update">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="insert" fx:id="insert_user" layoutX="328.0" layoutY="96.0" mnemonicParsing="false" onAction="#insert_user" prefHeight="25.0" prefWidth="103.0" text="Insert">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="search" fx:id="search_user" layoutX="323.0" layoutY="29.0" mnemonicParsing="false" onAction="#search_user" prefHeight="42.0" prefWidth="112.0" text="Search" textFill="#070707">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="40.0" layoutY="111.0" prefHeight="17.0" prefWidth="60.0" text="ID">
+                           <font>
+                              <Font name="Gabriola" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField id="id_user" fx:id="id_user" layoutX="128.0" layoutY="113.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                        <TextField id="cin" fx:id="nom_serv_user" layoutX="127.0" layoutY="299.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                        <TableView fx:id="UserTable" layoutX="444.0" layoutY="40.0" onMouseClicked="#Tableclicked_user" prefHeight="409.0" prefWidth="498.0">
+                           <columns>
+                              <TableColumn fx:id="id" prefWidth="29.0" text="ID" />
+                              <TableColumn fx:id="login" prefWidth="70.0" text="LOGIN" />
+                              <TableColumn fx:id="nom" prefWidth="52.0" text="NOM" />
+                              <TableColumn fx:id="prenom" prefWidth="65.0" text="PRENOM" />
+                              <TableColumn fx:id="ville" prefWidth="41.0" text="VILLE" />
+                              <TableColumn fx:id="tel" prefWidth="61.0" text="TEL" />
+                              <TableColumn fx:id="exp" prefWidth="52.0" text="EXP" />
+                              <TableColumn fx:id="nom_sv" prefWidth="54.0" text="NOM S" />
+                              <TableColumn fx:id="type_sv" prefWidth="75.0" text="TYPE S" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="876.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#refreshTable" text="REFRESH" />
+                        <TextField id="password1" fx:id="password1_user" layoutX="127.0" layoutY="399.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                        <TextField id="password" fx:id="password_user" layoutX="127.0" layoutY="366.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                        <TextField id="active" fx:id="type_serv_user" layoutX="128.0" layoutY="333.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                        <Label layoutX="40.0" layoutY="331.0" prefHeight="30.0" prefWidth="88.0" text="typeService">
+                           <font>
+                              <Font name="Gabriola" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="397.0" prefHeight="30.0" prefWidth="83.0" text="Password">
+                           <font>
+                              <Font name="Gabriola" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="366.0" prefHeight="30.0" prefWidth="87.0" text="Password">
+                           <font>
+                              <Font name="Gabriola" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="7.0" prefHeight="53.0" prefWidth="114.0" text="Login :">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                        <TextField id="login_user" fx:id="login_user" alignment="CENTER" layoutX="25.0" layoutY="55.0" opacity="0.95" prefHeight="46.0" prefWidth="292.0">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Client">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane cacheShape="false" centerShape="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="11.0" prefWidth="0.0" scaleShape="false" style="-fx-background-color: green;">
+                           <children>
+                              <Label layoutX="33.0" layoutY="103.0" prefHeight="30.0" prefWidth="82.0" text="ID">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="33.0" layoutY="133.0" prefHeight="17.0" prefWidth="75.0" text="nom">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="191.0" prefHeight="17.0" prefWidth="60.0" text="ville">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="33.0" layoutY="224.0" prefHeight="17.0" prefWidth="60.0" text="tel">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="firsname" fx:id="id_client" layoutX="121.0" layoutY="105.0" opacity="0.72" prefHeight="17.0" prefWidth="160.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <effect>
+                                    <Blend />
+                                 </effect>
+                              </TextField>
+                              <TextField id="lastname" fx:id="nom_client" layoutX="121.0" layoutY="134.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <TextField id="num" fx:id="ville_client" layoutX="121.0" layoutY="193.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <TextField id="gende" fx:id="prenom_client" layoutX="121.0" layoutY="163.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <TextField id="email" fx:id="tel_client" layoutX="121.0" layoutY="225.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <TextField id="password1" fx:id="password1_client" layoutX="121.0" layoutY="291.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                              <Label layoutX="33.0" layoutY="163.0" prefHeight="17.0" prefWidth="60.0" text="prenom">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="255.0" prefHeight="30.0" prefWidth="87.0" text="Password">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="287.0" prefHeight="30.0" prefWidth="83.0" text="Password">
+                                 <font>
+                                    <Font name="Gabriola" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+
+                        <TableView fx:id="ClientTable" layoutX="460.0" layoutY="32.0" onMouseClicked="#Tableclicked_client" prefHeight="412.0" prefWidth="481.0">
+
+                           <columns>
+                              <TableColumn fx:id="idc" maxWidth="70.0" prefWidth="49.0" style="-fx-alignment: center;" text="ID" />
+                              <TableColumn fx:id="loginc" maxWidth="121.0" prefWidth="82.0" style="-fx-alignment: center;" text="LOGIN" />
+                              <TableColumn fx:id="nomc" maxWidth="119.0" prefWidth="70.0" style="-fx-alignment: center;" text="NOM" />
+                              <TableColumn fx:id="prenomc" maxWidth="143.0" prefWidth="81.0" style="-fx-alignment: center;" text="PRENOM" />
+                              <TableColumn fx:id="villec" maxWidth="189.0" prefWidth="78.0" style="-fx-alignment: center;" text="VILLE" />
+                              <TableColumn fx:id="telc" maxWidth="187.0" prefWidth="120.0" style="-fx-alignment: center;" text="TEL" />
+                           </columns>
+
+                        </TableView>
+                        <Label fx:id="lblStatus1" layoutX="466.0" layoutY="6.0" prefHeight="21.0" prefWidth="282.0" text="Liste de Clients :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button id="delete" fx:id="delete_client" layoutX="324.0" layoutY="171.0" mnemonicParsing="false" onAction="#delete_client" prefHeight="25.0" prefWidth="103.0" text="Delete" textFill="#ee0707">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="update" fx:id="update_client" layoutX="324.0" layoutY="132.0" mnemonicParsing="false" onAction="#update_client" prefHeight="25.0" prefWidth="103.0" text="Update" textFill="#142194">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="insert" fx:id="insert_client" layoutX="324.0" layoutY="94.0" mnemonicParsing="false" onAction="#insert_client" prefHeight="25.0" prefWidth="103.0" text="Insert">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="search" fx:id="search_client" layoutX="319.0" layoutY="22.0" mnemonicParsing="false" onAction="#search_client" prefHeight="42.0" prefWidth="112.0" text="Search" textFill="#070707">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="871.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#refreshTable_c" text="REFRESH" />
+                        <TextField id="password" fx:id="password_client" layoutX="121.0" layoutY="259.0" opacity="0.72" prefHeight="25.0" prefWidth="160.0" />
+                        <Label layoutX="9.0" layoutY="2.0" prefHeight="53.0" prefWidth="105.0" text="Login :">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                        <TextField id="login_client" fx:id="login_client" alignment="CENTER" layoutX="14.0" layoutY="48.0" opacity="0.95" prefHeight="46.0" prefWidth="293.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Admin_3b1f258d"
+        },
+        {
+            "type": "java",
+            "name": "Launch MagicEventMainFX",
+            "request": "launch",
+            "mainClass": "magicevent.MagicEventMainFX",
+            "projectName": "MagicEvent1-main_e68c0004"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Admin.Main",
+            "projectName": "MagicEvent1_577ee09"
+        },
+        {
+            "type": "java",
+            "name": "Launch MagicEventMainFX",
+            "request": "launch",
+            "mainClass": "magicevent.MagicEventMainFX",
+            "projectName": "MagicEvent1_577ee09"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "home.Main",
+            "vmArgs": "--module-path C:\\Users\\iyadh\\Desktop\\javafx-sdk-18.0.2\\lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
